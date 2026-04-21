@@ -604,7 +604,7 @@ function closeModal() {
 
 document.getElementById('save-btn').addEventListener('click', () => {
   const s = getState();
-  s.title = document.getElementById('m-title').value || 'MY ASSISTANT';
+  s.title = document.getElementById('m-title').value || '4ASSISTANT';
   s.sub   = document.getElementById('m-sub').value   || '';
   document.querySelectorAll('#card-edit-list input').forEach(inp => {
     const i = +inp.dataset.i, f = inp.dataset.f;
