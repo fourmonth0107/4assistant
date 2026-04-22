@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -451,22 +452,26 @@
 <script>
 // ── Default cards ──────────────────────────────────────────
 const DEFAULT_CARDS = [
-  { icon:'🤖', label:'Claude AI',    desc:'AI 助手',      url:'https://claude.ai',                              color:'c1', wide:false },
-  { icon:'🎬', label:'YouTube',      desc:'影片平台',      url:'https://youtube.com',                            color:'c4', wide:false },
-  { icon:'📘', label:'Facebook',     desc:'社群網路',      url:'https://facebook.com',                           color:'c2', wide:false },
-  { icon:'📸', label:'Instagram',    desc:'相片分享',      url:'https://instagram.com',                          color:'c4', wide:false },
-  { icon:'💬', label:'ChatGPT',      desc:'OpenAI',       url:'https://chat.openai.com',                        color:'c5', wide:false },
-  { icon:'🗺', label:'Google Maps',  desc:'導航地圖',      url:'https://maps.google.com',                        color:'c3', wide:false },
-  { icon:'☁️', label:'Google Drive', desc:'雲端硬碟',      url:'https://drive.google.com',                       color:'c2', wide:false },
-  { icon:'📰', label:'Google News',  desc:'新聞頭條',      url:'https://news.google.com',                        color:'c8', wide:false },
-  { icon:'📺', label:'線上看電視',    desc:'YesLiveTV',    url:'https://yeslivetv.com',                          color:'c2', wide:false },
-  { icon:'⚾️', label:'體育台 TV',    desc:'ELTA 直播',    url:'https://live.yes2049.com/channels/elta-tv-1/',   color:'c3', wide:false },
-  { icon:'📺', label:'Apple TV+',    desc:'蘋果影音',      url:'https://tv.apple.com/tw/',                       color:'c7', wide:false },
-  { icon:'💬', label:'Line TV',      desc:'LINE 影音',    url:'https://www.linetv.tw',                          color:'c1', wide:false },
-  { icon:'🎮', label:'遊戲',          desc:'小遊戲平台',    url:'https://www.yikm.net',                           color:'c5', wide:false },
-  { icon:'🕹️', label:'街機',          desc:'經典街機',      url:'https://www.yikm.net/nes?tag=9',                 color:'c6', wide:false },
-  { icon:'🥁', label:'太鼓達人',      desc:'節奏遊戲',      url:'https://cjdgrevival.com',                        color:'c3', wide:false },
+  // 第一列：常用工具
+  { icon:'🤖', label:'Claude AI',    desc:'AI 助手',      url:'https://claude.ai',                                   color:'c1', wide:false },
+  { icon:'🎬', label:'YouTube',      desc:'影片平台',      url:'https://youtube.com',                                 color:'c4', wide:false },
+  { icon:'📘', label:'Facebook',     desc:'社群網路',      url:'https://facebook.com',                                color:'c2', wide:false },
+  { icon:'📸', label:'Instagram',    desc:'相片分享',      url:'https://instagram.com',                               color:'c4', wide:false },
+  // 第二列：遊戲
+  { icon:'🎮', label:'遊戲',          desc:'小遊戲平台',    url:'https://www.yikm.net',                                color:'c5', wide:false },
+  { icon:'🕹️', label:'街機',          desc:'經典街機',      url:'https://www.yikm.net/nes?tag=9',                      color:'c6', wide:false },
+  { icon:'🥁', label:'太鼓達人',      desc:'節奏遊戲',      url:'https://cjdgrevival.com',                             color:'c3', wide:false },
   { icon:'🥊', label:'格鬥天王',      desc:'拳皇系列',      url:'https://www.yikm.net/nes?tag=%E6%8B%B3%E7%9A%87&e=1', color:'c4', wide:false },
+  // 第三列：影音（col3 = 魂斗羅）
+  { icon:'📺', label:'線上看電視',    desc:'YesLiveTV',    url:'https://yeslivetv.com',                               color:'c2', wide:false },
+  { icon:'⚾️', label:'體育台 TV',    desc:'ELTA 直播',    url:'https://live.yes2049.com/channels/elta-tv-1/',        color:'c3', wide:false },
+  { icon:'🔫', label:'魂斗羅',        desc:'射擊遊戲',      url:'https://www.yikm.net/play?id=4137',                   color:'c6', wide:false },
+  { icon:'💬', label:'Line TV',      desc:'LINE 影音',    url:'https://www.linetv.tw',                               color:'c1', wide:false },
+  // 第四列（col1 = Apple TV+）
+  { icon:'📺', label:'Apple TV+',    desc:'蘋果影音',      url:'https://tv.apple.com/tw/',                            color:'c7', wide:false },
+  { icon:'💬', label:'ChatGPT',      desc:'OpenAI',       url:'https://chat.openai.com',                             color:'c5', wide:false },
+  { icon:'🗺', label:'Google Maps',  desc:'導航地圖',      url:'https://maps.google.com',                             color:'c3', wide:false },
+  { icon:'📰', label:'Google News',  desc:'新聞頭條',      url:'https://news.google.com',                             color:'c8', wide:false },
 ];
 
 // ── State ──────────────────────────────────────────────────
